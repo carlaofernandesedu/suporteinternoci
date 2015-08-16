@@ -1,0 +1,379 @@
+
+Hora:20141229 08:12:15;Operacao:scriptbancodados;Sistema:desenv;Ambiente:GDAE-PROD;IPHost:::1
+
+SQL*Plus: Release 11.1.0.7.0 - Production
+
+Copyright (c) 1982, 2008, Oracle.  All rights reserved.
+
+Use SQL*Plus para executar as instruþ§es SQL, PL/SQL e SQL*Plus.
+
+Uso 1: sqlplus -H | -V
+
+    -H		   Exibe a versÒo do SQL*Plus e o
+		   uso da ajuda.
+    -V		   Exibe a versÒo do SQL*Plus.
+
+Uso 2: SQLPLUS [ [<opþÒo>] [<logon>] [<start>] ]
+
+  <opþÒo> Ú: [-C <versÒo>] [-L] [-M "<opþ§es>"] [-R <nÝvel>] [-S]
+
+    -C <versÒo>   Define a compatibilidade de comandos afetados com a
+		   versÒo especificada por <versÒo>.  A versÒo tem
+		   o formato "x.y[.z]". Por exemplo, -C 10.2.0
+    -F		   Ativa o modo de failover para um ambiente RAC.
+    -L		   Tenta efetuar logon uma ·nica vez, e nÒo
+		   repetir prompt em caso de erro.
+    -M "<opþ§es>" Define a marcaþÒo HTML automßtica da saÝda. As opþ§es
+		   tÛm o formato:
+		   HTML [ON|OFF] [HEAD text] [BODY text] [TABLE text]
+		   [ENTMAP {ON|OFF}] [SPOOL {ON|OFF}] [PRE[FORMAT] {ON|OFF}]
+    -R <nÝvel>	   Define o modo restrito para desativar comandos SQL*Plus
+		   que interagem com o sistema de arquivos. O nÝvel pode
+		   ser 1, 2 ou 3. O mais restritivo Ú -R 3, que
+		   desativa todos os comandos de usußrio que interagem com o
+		   sistema de arquivos.
+    -S		   Define o modo silencioso, que suprime a exibiþÒo
+		   do banner do SQL*Plus, de prompts e o eco de
+		   comandos.
+
+  <logon> Ú: (<username>[/<password>][@<connect_identifier>] | /)
+	      [AS SYSDBA | AS SYSOPER | AS SYSASM] | /NOLOG | [EDITION=value]
+
+    Especifica o nome da conta, a senha do usußrio e o identificador de
+    conexÒo para a conexÒo de banco de dados. Sem um identificador de
+    conexÒo, o SQL*Plus estabelece conexÒo ao banco de dados default.
+
+    As opþ§es AS SYSDBA, AS SYSOPER e AS SYSASM sÒo
+    privilÚgios de administraþÒo do banco de dados.
+
+    <connect_identifier> pode estar no form do Nome do Serviþo de Rede
+    ou na ConexÒo Fßcil.
+
+      @[<net_service_name> | [//]Host[:Port]/<service_name>]
+
+ 	<net_service_name> Ú um nome simples de um serviþo que Ú resolvido
+	para um descritor de conexÒo.
+
+	Exemplo: Estabelecer conexÒo ao banco de dados usando o Nome do Serviþo de Rede e
+		 o nome do serviþo de rede do banco de dados Ú ORCL.
+
+	   sqlplus myusername/mypassword@ORCL
+
+ 	O host especifica o nome do host ou o endereþo de IP do
+	computador do servidor do banco de dados.
+
+	A porta especifica a porta de listening no servidor do banco de dados.
+
+	<service_name> especifica o nome do serviþo do banco de dados que vocÛ
+	deseja acessar.
+
+	Exemplo: Estabelecer conexÒo ao banco de dados usando ConexÒo Fßcil e o
+		 nome do Serviþo Ú ORCL.
+
+	   sqlplus myusername/mypassword@Host/ORCL
+
+     A opþÒo /NOLOG inicia o SQL*Plus sem conectar a um
+    banco de dados.
+
+    A EDITION especifica o valor da AplicaþÒo
+    EdiþÒo
+
+  <start> Ú: @<URL>|<filename>[.<ext>] [<parameter> ...]
+
+     Executa o script SQL*Plus especificado de um servidor web (URL) ou
+    do sistema de arquivos local (filename.ext) com parÔmetros especificados que
+    serÒo atribuÝdos a varißveis de substituiþÒo no script.
+
+Quando o SQL*Plus inicia e ap¾s os comandos CONNECT, o perfil do site
+(ex.: $ORACLE_HOME/sqlplus/admin/glogin.sql) e o perfil do usußrio
+(ex.: login.sql no diret¾rio de trabalho) sÒo executados. Os arquivos podem
+conter comandos SQL*Plus.
+
+Consulte o SQL*Plus User's Guide and Reference para obter mais informaþ§es.
+
+
+
+Hora:20141229 08:14:52;Operacao:scriptbancodados;Sistema:desenv;Ambiente:GDAE-PROD;IPHost:::1
+
+SQL*Plus: Release 11.1.0.7.0 - Production
+
+Copyright (c) 1982, 2008, Oracle.  All rights reserved.
+
+Use SQL*Plus para executar as instruþ§es SQL, PL/SQL e SQL*Plus.
+
+Uso 1: sqlplus -H | -V
+
+    -H		   Exibe a versÒo do SQL*Plus e o
+		   uso da ajuda.
+    -V		   Exibe a versÒo do SQL*Plus.
+
+Uso 2: SQLPLUS [ [<opþÒo>] [<logon>] [<start>] ]
+
+  <opþÒo> Ú: [-C <versÒo>] [-L] [-M "<opþ§es>"] [-R <nÝvel>] [-S]
+
+    -C <versÒo>   Define a compatibilidade de comandos afetados com a
+		   versÒo especificada por <versÒo>.  A versÒo tem
+		   o formato "x.y[.z]". Por exemplo, -C 10.2.0
+    -F		   Ativa o modo de failover para um ambiente RAC.
+    -L		   Tenta efetuar logon uma ·nica vez, e nÒo
+		   repetir prompt em caso de erro.
+    -M "<opþ§es>" Define a marcaþÒo HTML automßtica da saÝda. As opþ§es
+		   tÛm o formato:
+		   HTML [ON|OFF] [HEAD text] [BODY text] [TABLE text]
+		   [ENTMAP {ON|OFF}] [SPOOL {ON|OFF}] [PRE[FORMAT] {ON|OFF}]
+    -R <nÝvel>	   Define o modo restrito para desativar comandos SQL*Plus
+		   que interagem com o sistema de arquivos. O nÝvel pode
+		   ser 1, 2 ou 3. O mais restritivo Ú -R 3, que
+		   desativa todos os comandos de usußrio que interagem com o
+		   sistema de arquivos.
+    -S		   Define o modo silencioso, que suprime a exibiþÒo
+		   do banner do SQL*Plus, de prompts e o eco de
+		   comandos.
+
+  <logon> Ú: (<username>[/<password>][@<connect_identifier>] | /)
+	      [AS SYSDBA | AS SYSOPER | AS SYSASM] | /NOLOG | [EDITION=value]
+
+    Especifica o nome da conta, a senha do usußrio e o identificador de
+    conexÒo para a conexÒo de banco de dados. Sem um identificador de
+    conexÒo, o SQL*Plus estabelece conexÒo ao banco de dados default.
+
+    As opþ§es AS SYSDBA, AS SYSOPER e AS SYSASM sÒo
+    privilÚgios de administraþÒo do banco de dados.
+
+    <connect_identifier> pode estar no form do Nome do Serviþo de Rede
+    ou na ConexÒo Fßcil.
+
+      @[<net_service_name> | [//]Host[:Port]/<service_name>]
+
+ 	<net_service_name> Ú um nome simples de um serviþo que Ú resolvido
+	para um descritor de conexÒo.
+
+	Exemplo: Estabelecer conexÒo ao banco de dados usando o Nome do Serviþo de Rede e
+		 o nome do serviþo de rede do banco de dados Ú ORCL.
+
+	   sqlplus myusername/mypassword@ORCL
+
+ 	O host especifica o nome do host ou o endereþo de IP do
+	computador do servidor do banco de dados.
+
+	A porta especifica a porta de listening no servidor do banco de dados.
+
+	<service_name> especifica o nome do serviþo do banco de dados que vocÛ
+	deseja acessar.
+
+	Exemplo: Estabelecer conexÒo ao banco de dados usando ConexÒo Fßcil e o
+		 nome do Serviþo Ú ORCL.
+
+	   sqlplus myusername/mypassword@Host/ORCL
+
+     A opþÒo /NOLOG inicia o SQL*Plus sem conectar a um
+    banco de dados.
+
+    A EDITION especifica o valor da AplicaþÒo
+    EdiþÒo
+
+  <start> Ú: @<URL>|<filename>[.<ext>] [<parameter> ...]
+
+     Executa o script SQL*Plus especificado de um servidor web (URL) ou
+    do sistema de arquivos local (filename.ext) com parÔmetros especificados que
+    serÒo atribuÝdos a varißveis de substituiþÒo no script.
+
+Quando o SQL*Plus inicia e ap¾s os comandos CONNECT, o perfil do site
+(ex.: $ORACLE_HOME/sqlplus/admin/glogin.sql) e o perfil do usußrio
+(ex.: login.sql no diret¾rio de trabalho) sÒo executados. Os arquivos podem
+conter comandos SQL*Plus.
+
+Consulte o SQL*Plus User's Guide and Reference para obter mais informaþ§es.
+
+
+
+Hora:20141229 08:16:55;Operacao:scriptbancodados;Sistema:desenv;Ambiente:GDAE-PROD;IPHost:::1
+
+SQL*Plus: Release 11.1.0.7.0 - Production
+
+Copyright (c) 1982, 2008, Oracle.  All rights reserved.
+
+Use SQL*Plus para executar as instruþ§es SQL, PL/SQL e SQL*Plus.
+
+Uso 1: sqlplus -H | -V
+
+    -H		   Exibe a versÒo do SQL*Plus e o
+		   uso da ajuda.
+    -V		   Exibe a versÒo do SQL*Plus.
+
+Uso 2: SQLPLUS [ [<opþÒo>] [<logon>] [<start>] ]
+
+  <opþÒo> Ú: [-C <versÒo>] [-L] [-M "<opþ§es>"] [-R <nÝvel>] [-S]
+
+    -C <versÒo>   Define a compatibilidade de comandos afetados com a
+		   versÒo especificada por <versÒo>.  A versÒo tem
+		   o formato "x.y[.z]". Por exemplo, -C 10.2.0
+    -F		   Ativa o modo de failover para um ambiente RAC.
+    -L		   Tenta efetuar logon uma ·nica vez, e nÒo
+		   repetir prompt em caso de erro.
+    -M "<opþ§es>" Define a marcaþÒo HTML automßtica da saÝda. As opþ§es
+		   tÛm o formato:
+		   HTML [ON|OFF] [HEAD text] [BODY text] [TABLE text]
+		   [ENTMAP {ON|OFF}] [SPOOL {ON|OFF}] [PRE[FORMAT] {ON|OFF}]
+    -R <nÝvel>	   Define o modo restrito para desativar comandos SQL*Plus
+		   que interagem com o sistema de arquivos. O nÝvel pode
+		   ser 1, 2 ou 3. O mais restritivo Ú -R 3, que
+		   desativa todos os comandos de usußrio que interagem com o
+		   sistema de arquivos.
+    -S		   Define o modo silencioso, que suprime a exibiþÒo
+		   do banner do SQL*Plus, de prompts e o eco de
+		   comandos.
+
+  <logon> Ú: (<username>[/<password>][@<connect_identifier>] | /)
+	      [AS SYSDBA | AS SYSOPER | AS SYSASM] | /NOLOG | [EDITION=value]
+
+    Especifica o nome da conta, a senha do usußrio e o identificador de
+    conexÒo para a conexÒo de banco de dados. Sem um identificador de
+    conexÒo, o SQL*Plus estabelece conexÒo ao banco de dados default.
+
+    As opþ§es AS SYSDBA, AS SYSOPER e AS SYSASM sÒo
+    privilÚgios de administraþÒo do banco de dados.
+
+    <connect_identifier> pode estar no form do Nome do Serviþo de Rede
+    ou na ConexÒo Fßcil.
+
+      @[<net_service_name> | [//]Host[:Port]/<service_name>]
+
+ 	<net_service_name> Ú um nome simples de um serviþo que Ú resolvido
+	para um descritor de conexÒo.
+
+	Exemplo: Estabelecer conexÒo ao banco de dados usando o Nome do Serviþo de Rede e
+		 o nome do serviþo de rede do banco de dados Ú ORCL.
+
+	   sqlplus myusername/mypassword@ORCL
+
+ 	O host especifica o nome do host ou o endereþo de IP do
+	computador do servidor do banco de dados.
+
+	A porta especifica a porta de listening no servidor do banco de dados.
+
+	<service_name> especifica o nome do serviþo do banco de dados que vocÛ
+	deseja acessar.
+
+	Exemplo: Estabelecer conexÒo ao banco de dados usando ConexÒo Fßcil e o
+		 nome do Serviþo Ú ORCL.
+
+	   sqlplus myusername/mypassword@Host/ORCL
+
+     A opþÒo /NOLOG inicia o SQL*Plus sem conectar a um
+    banco de dados.
+
+    A EDITION especifica o valor da AplicaþÒo
+    EdiþÒo
+
+  <start> Ú: @<URL>|<filename>[.<ext>] [<parameter> ...]
+
+     Executa o script SQL*Plus especificado de um servidor web (URL) ou
+    do sistema de arquivos local (filename.ext) com parÔmetros especificados que
+    serÒo atribuÝdos a varißveis de substituiþÒo no script.
+
+Quando o SQL*Plus inicia e ap¾s os comandos CONNECT, o perfil do site
+(ex.: $ORACLE_HOME/sqlplus/admin/glogin.sql) e o perfil do usußrio
+(ex.: login.sql no diret¾rio de trabalho) sÒo executados. Os arquivos podem
+conter comandos SQL*Plus.
+
+Consulte o SQL*Plus User's Guide and Reference para obter mais informaþ§es.
+
+
+
+Hora:20141229 08:17:59;Operacao:scriptbancodados;Sistema:desenv;Ambiente:GDAE-PROD;IPHost:::1
+
+SQL*Plus: Release 11.1.0.7.0 - Production on Seg Dez 29 08:17:57 2014
+
+Copyright (c) 1982, 2008, Oracle.  All rights reserved.
+
+
+Conectado a:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SP2-0310: nÒo foi possÝvel abrir o arquivo "@d:\ci\bancodados\in\20141229_08175612ff\01-DDL_LICPREMIO_LENNON-AA.txt"
+Desconectado de Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+
+
+Hora:20141229 08:22:30;Operacao:scriptbancodados;Sistema:desenv;Ambiente:GDAE-PROD;IPHost:::1
+
+SQL*Plus: Release 11.1.0.7.0 - Production on Seg Dez 29 08:22:30 2014
+
+Copyright (c) 1982, 2008, Oracle.  All rights reserved.
+
+
+Conectado a:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SP2-0310: nÒo foi possÝvel abrir o arquivo "@d:\ci\bancodados\in\20141229_08212357e2\01-DDL_LICPREMIO_LENNON-AA.txt"
+Desconectado de Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+
+
+Hora:20141229 08:30:55;Operacao:scriptbancodados;Sistema:desenv;Ambiente:GDAE-PROD;IPHost:::1
+
+SQL*Plus: Release 11.1.0.7.0 - Production on Seg Dez 29 08:30:54 2014
+
+Copyright (c) 1982, 2008, Oracle.  All rights reserved.
+
+
+Conectado a:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+
+D
+-
+X
+
+Desconectado de Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+
+
+Hora:20141229 08:35:02;Operacao:scriptbancodados;Sistema:desenv;Ambiente:GDAE-PROD;IPHost:::1
+
+SQL*Plus: Release 11.1.0.7.0 - Production on Seg Dez 29 08:35:01 2014
+
+Copyright (c) 1982, 2008, Oracle.  All rights reserved.
+
+
+Conectado a:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+
+D
+-
+X
+
+Desconectado de Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+
+
+Hora:20141229 08:36:35;Operacao:scriptbancodados;Sistema:desenv;Ambiente:GDAE-PROD;IPHost:::1
+
+SQL*Plus: Release 11.1.0.7.0 - Production on Seg Dez 29 08:36:35 2014
+
+Copyright (c) 1982, 2008, Oracle.  All rights reserved.
+
+
+Conectado a:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+
+D
+-
+X
+
+Desconectado de Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+

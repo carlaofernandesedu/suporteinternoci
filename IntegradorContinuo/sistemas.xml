@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataSet>
+  <teste modulo="portalnet" enviapacote="0" pathapp="D:\Teste\PortalNet\BIN" />
+  <homologacao modulo="portalnet" enviapacote="0" pathapp="D:\Homologacao\PortalNet\BIN" />
+  <producao modulo="questionario" enviapacote="1" pathapp="" />
+  <producao modulo="municipalizacao" enviapacote="1" pathapp="" />
+  <producao modulo="roe" enviapacote="1" pathapp="D:\servicos\win\roe" />
+</DataSet>

@@ -1,0 +1,257 @@
+
+Hora:20141127 03:24:19;Operacao:importarpacote;Sistema:roe;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 27/11/2014 15:24:13 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+DeployZip:
+  Descompatando os arquivo(s) do sistema roe a partir do diretorio d:\ci\arquivos\src\producao\roe
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\src\producao\roe
+  Descompactacao concluida...
+StopService:
+  Verificando Servico: roe.service
+  Service: roe.service does not exist on: PRODESP-112810.
+  Servico Existe: False
+CopyToApp:
+  Copiando os arquivos de d:\ci\arquivos\src\producao\roe\roe para d:\servicos\win\roe ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt
+  Return Code 1. One or more files were copied successfully (that is, new files have arrived).
+  Arquivos copiados com sucesso
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\processados\roe_20141127152419.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:05.89
+
+
+
+Hora:20141127 03:31:06;Operacao:importarpacote;Sistema:roe;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 27/11/2014 15:31:05 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\producao\roe".
+  rd /s /q "d:\ci\arquivos\src\producao\roe"
+DeployZip:
+  Descompatando os arquivo(s) do sistema roe a partir do diretorio d:\ci\arquivos\src\producao\roe
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\src\producao\roe
+  Descompactacao concluida...
+StopService:
+  Verificando Servico: roe.service
+  Service: roe.service does not exist on: PRODESP-112810.
+  Servico Existe: False
+CopyToApp:
+  Copiando os arquivos de d:\ci\arquivos\src\producao\roe\roe para d:\servicos\win\roe ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt
+  Return Code 0. No errors occurred, and no copying was done. The source and destination directory trees are completely synchronized.
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\processados\roe_20141127153106.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:01.42
+
+
+
+Hora:20141127 03:35:07;Operacao:importarpacote;Sistema:roe;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 27/11/2014 15:35:06 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\producao\roe".
+  rd /s /q "d:\ci\arquivos\src\producao\roe"
+DeployZip:
+  Descompatando os arquivo(s) do sistema roe a partir do diretorio d:\ci\arquivos\src\producao\roe
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\src\producao\roe
+  Descompactacao concluida...
+StopService:
+  Verificando Servico: roe.service
+  Service: roe.service does not exist on: PRODESP-112810.
+  Servico Existe: False
+CopyToApp:
+  Copiando os arquivos de d:\ci\arquivos\src\producao\roe\roe para d:\servicos\win\roe ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt
+  Return Code 1. One or more files were copied successfully (that is, new files have arrived).
+  Arquivos copiados com sucesso
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\processados\roe_20141127153507.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:01.22
+
+
+
+Hora:20141127 03:38:24;Operacao:importarpacote;Sistema:roe;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 27/11/2014 15:38:23 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\producao\roe".
+  rd /s /q "d:\ci\arquivos\src\producao\roe"
+DeployZip:
+  Descompatando os arquivo(s) do sistema roe a partir do diretorio d:\ci\arquivos\src\producao\roe
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\src\producao\roe
+  Descompactacao concluida...
+StopService:
+  Verificando Servico: ROE - Envio de Relatorios
+  Servico Existe: True
+  Parando o Servico: ROE - Envio de Relatorios
+  Stopped: ROE - Envio de Relatorios on 'PRODESP-112810'
+CopyToApp:
+  Copiando os arquivos de d:\ci\arquivos\src\producao\roe\roe para d:\servicos\win\roe ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt
+  Return Code 0. No errors occurred, and no copying was done. The source and destination directory trees are completely synchronized.
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\processados\roe_20141127153824.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:01.40
+
+
+
+Hora:20141127 03:38:48;Operacao:importarpacote;Sistema:roe;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 27/11/2014 15:38:47 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\producao\roe".
+  rd /s /q "d:\ci\arquivos\src\producao\roe"
+DeployZip:
+  Descompatando os arquivo(s) do sistema roe a partir do diretorio d:\ci\arquivos\src\producao\roe
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\src\producao\roe
+  Descompactacao concluida...
+StopService:
+  Verificando Servico: ROE - Envio de Relatorios
+  Servico Existe: True
+  Parando o Servico: ROE - Envio de Relatorios
+  Stopped: ROE - Envio de Relatorios on 'PRODESP-112810'
+CopyToApp:
+  Copiando os arquivos de d:\ci\arquivos\src\producao\roe\roe para d:\servicos\win\roe ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt
+  Return Code 0. No errors occurred, and no copying was done. The source and destination directory trees are completely synchronized.
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\processados\roe_20141127153848.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:01.16
+
+
+
+Hora:20141127 04:49:48;Operacao:importarpacote;Sistema:municipalizacao;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 27/11/2014 16:49:47 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\producao\municipalizacao".
+  rd /s /q "d:\ci\arquivos\src\producao\municipalizacao"
+DeployZip:
+  Descompatando os arquivo(s) do sistema municipalizacao a partir do diretorio d:\ci\arquivos\src\producao\municipalizacao
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\producao\municipalizacao.zip to: d:\ci\arquivos\src\producao\municipalizacao
+  Descompactacao concluida...
+CopyToApp:
+  Copiando os arquivos de d:\ci\arquivos\src\producao\municipalizacao para d:\portal\municipalizacao ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\producao\municipalizacao d:\portal\municipalizacao "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\municipalizacao_20141127.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\producao\municipalizacao d:\portal\municipalizacao "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\municipalizacao_20141127.txt
+  Return Code 2. Some Extra files or directories were detected. Examine the output log. Some housekeeping may be needed.
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\producao\municipalizacao.zip to: d:\ci\arquivos\processados\municipalizacao_20141127164948.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:01.04
+
+
+
+Hora:20141127 04:50:09;Operacao:importarpacote;Sistema:roe;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 27/11/2014 16:50:08 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\producao\roe".
+  rd /s /q "d:\ci\arquivos\src\producao\roe"
+DeployZip:
+  Descompatando os arquivo(s) do sistema roe a partir do diretorio d:\ci\arquivos\src\producao\roe
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\src\producao\roe
+  Descompactacao concluida...
+StopService:
+  Verificando Servico: ROE - Envio de Relatorios
+  Service: ROE - Envio de Relatorios does not exist on: PRODESP-112810.
+  Servico Existe: False
+CopyToApp:
+  Copiando os arquivos de d:\ci\arquivos\src\producao\roe\roe para d:\servicos\win\roe ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\producao\roe\roe d:\servicos\win\roe "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\roe_20141127.txt
+  Return Code 1. One or more files were copied successfully (that is, new files have arrived).
+  Arquivos copiados com sucesso
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\producao\roe.zip to: d:\ci\arquivos\processados\roe_20141127165009.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;StopService;CopyToApp;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:01.18
+
+

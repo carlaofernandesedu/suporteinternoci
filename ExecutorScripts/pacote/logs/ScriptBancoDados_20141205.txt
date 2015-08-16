@@ -1,0 +1,21 @@
+
+Hora:20141205 03:26:10;Operacao:scriptbancodados;Sistema:contageh;Ambiente:desenvolvimento;IPHost:::1
+
+SQL*Plus: Release 11.1.0.7.0 - Production on Sex Dez 5 15:25:49 2014
+
+Copyright (c) 1982, 2008, Oracle.  All rights reserved.
+
+
+Conectado a:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+
+'
+-
+x
+
+Desconectado de Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+

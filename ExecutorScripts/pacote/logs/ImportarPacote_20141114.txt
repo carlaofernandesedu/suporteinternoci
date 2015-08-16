@@ -1,0 +1,30 @@
+
+Hora:20141114 03:06:58;Operacao:importarpacote;Sistema:portalnet;Ambiente:homologacao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 14/11/2014 15:06:52 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+DeployZip:
+  Descompatando os arquivo(s) do sistema portalnet a partir do diretorio d:\ci\arquivos\src\homologacao\portalnet
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\homologacao\portalnet.zip to: d:\ci\arquivos\src\homologacao\portalnet
+  Descompactacao concluida...
+  Copiando os arquivos de d:\ci\arquivos\src\homologacao\portalnet para d:\homologacao\portalnet ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\homologacao\portalnet d:\homologacao\portalnet "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\portalnet_20141114.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\homologacao\portalnet d:\homologacao\portalnet "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\portalnet_20141114.txt
+  Return Code 1. One or more files were copied successfully (that is, new files have arrived).
+  Arquivos copiados com sucesso
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\homologacao\portalnet.zip to: d:\ci\arquivos\processados\portalnet_20141114150658.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:05.69
+
+

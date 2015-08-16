@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataSet>
+  <Regras nome="ArquivoExtensao" argumento="sql;prc" tipo="arquivo" />
+  <Regras nome="ArquivoTamanho" argumento="10000000" tipo="arquivo" />
+  <Regras nome="ConteudoTerminador" argumento="" tipo="conteudo" />
+  <Regras nome="ConteudoLinhaEmBranco" argumento="" tipo="conteudo" />
+  <Regras nome="ConteudoTextoReservado" argumento="SPOOL;BYTE;MAX;-----;/****" tipo="conteudo" />
+  <Regras nome="ConteudoDDL" argumento="INSERT;UPDATE;DELETE" tipo="conteudo" />
+  <Regras nome="ConteudoDML" argumento="ALTER;DROP;CREATE;GRANT;REVOKE" tipo="conteudo" />
+  <Regras nome="ConteudoObjetoAspas" argumento="" tipo="conteudo" />
+</DataSet>

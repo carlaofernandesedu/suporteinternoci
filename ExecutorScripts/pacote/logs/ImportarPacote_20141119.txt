@@ -1,0 +1,138 @@
+
+Hora:20141119 11:07:08;Operacao:importarpacote;Sistema:municipalizacao;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 19/11/2014 11:07:07 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+D:\ci\scripts\msbuild\MSUnzip.proj(67,6): error MSB4025: Não foi possível carregar o arquivo de projeto. A marca de início 'PropertyGroup' na linha 66 posição 6 não corresponde à marca de fim de 'When'. Linha 67, posição 6.
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)) -- FALHA.
+
+FALHA da compilação.
+
+"D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino) (1) ->
+  D:\ci\scripts\msbuild\MSUnzip.proj(67,6): error MSB4025: Não foi possível carregar o arquivo de projeto. A marca de início 'PropertyGroup' na linha 66 posição 6 não corresponde à marca de fim de 'When'. Linha 67, posição 6.
+
+    0 Aviso(s)
+    1 Erro(s)
+
+Tempo Decorrido 00:00:00.81
+
+
+
+Hora:20141119 11:13:34;Operacao:importarpacote;Sistema:municipalizacao;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 19/11/2014 11:13:34 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+D:\ci\scripts\msbuild\MSUnzip.proj(64,4): error MSB4067: O elemento <When> abaixo do elemento <Choose> não é reconhecido.
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)) -- FALHA.
+
+FALHA da compilação.
+
+"D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino) (1) ->
+  D:\ci\scripts\msbuild\MSUnzip.proj(64,4): error MSB4067: O elemento <When> abaixo do elemento <Choose> não é reconhecido.
+
+    0 Aviso(s)
+    1 Erro(s)
+
+Tempo Decorrido 00:00:00.31
+
+
+
+Hora:20141119 11:19:16;Operacao:importarpacote;Sistema:municipalizacao;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 19/11/2014 11:19:13 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+DeployZip:
+  Descompatando os arquivo(s) do sistema municipalizacao a partir do diretorio d:\ci\arquivos\src\producao\municipalizacao
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\producao\municipalizacao.zip to: d:\ci\arquivos\src\producao\municipalizacao
+  Descompactacao concluida...
+  Copiando os arquivos de d:\ci\arquivos\src\producao\municipalizacao para d:\portal\municipalizacao ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\producao\municipalizacao d:\portal\municipalizacao "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\municipalizacao_20141119.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\producao\municipalizacao d:\portal\municipalizacao "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\municipalizacao_20141119.txt
+  Return Code 1. One or more files were copied successfully (that is, new files have arrived).
+  Arquivos copiados com sucesso
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\producao\municipalizacao.zip to: d:\ci\arquivos\processados\municipalizacao_20141119111916.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:02.93
+
+
+
+Hora:20141119 11:49:05;Operacao:importarpacote;Sistema:municipalizacao;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 19/11/2014 11:49:04 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\producao\municipalizacao".
+  rd /s /q "d:\ci\arquivos\src\producao\municipalizacao"
+DeployZip:
+  Descompatando os arquivo(s) do sistema municipalizacao a partir do diretorio d:\ci\arquivos\src\producao\municipalizacao
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\producao\municipalizacao.zip to: d:\ci\arquivos\src\producao\municipalizacao
+  Descompactacao concluida...
+  Copiando os arquivos de d:\ci\arquivos\src\producao\municipalizacao\municipalizacao para d:\portal\municipalizacao ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\producao\municipalizacao\municipalizacao d:\portal\municipalizacao "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\municipalizacao_20141119.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\producao\municipalizacao\municipalizacao d:\portal\municipalizacao "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\municipalizacao_20141119.txt
+  Return Code 3. One or more files were copied successfully (that is, new files have arrived). Some Extra files or directories were detected. Examine the output log. Some housekeeping may be needed.
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\producao\municipalizacao.zip to: d:\ci\arquivos\processados\municipalizacao_20141119114905.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:01.12
+
+
+
+Hora:20141119 11:54:28;Operacao:importarpacote;Sistema:municipalizacao;Ambiente:producao;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 19/11/2014 11:54:27 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\producao\municipalizacao".
+  rd /s /q "d:\ci\arquivos\src\producao\municipalizacao"
+DeployZip:
+  Descompatando os arquivo(s) do sistema municipalizacao a partir do diretorio d:\ci\arquivos\src\producao\municipalizacao
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\producao\municipalizacao.zip to: d:\ci\arquivos\src\producao\municipalizacao
+  Descompactacao concluida...
+  Copiando os arquivos de d:\ci\arquivos\src\producao\municipalizacao para d:\portal\municipalizacao ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\producao\municipalizacao d:\portal\municipalizacao "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\municipalizacao_20141119.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\producao\municipalizacao d:\portal\municipalizacao "*.*" /r:2 /e /log+:d:\ci\arquivos\processados\municipalizacao_20141119.txt
+  Return Code 3. One or more files were copied successfully (that is, new files have arrived). Some Extra files or directories were detected. Examine the output log. Some housekeeping may be needed.
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\producao\municipalizacao.zip to: d:\ci\arquivos\processados\municipalizacao_20141119115428.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:00.99
+
+

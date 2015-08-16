@@ -1,0 +1,237 @@
+
+Hora:20141113 08:32:47;Operacao:importarpacote;Sistema:portalnet;Ambiente:teste;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+MSBUILD : error MSB1009: Arquivo de projeto não existe.
+Opção: D:\CI\teste\HelloMSBuild.proj
+
+
+
+Hora:20141113 08:35:33;Operacao:importarpacote;Sistema:portalnet;Ambiente:teste;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+MSBUILD : error MSB1009: Arquivo de projeto não existe.
+Opção: D:\CI\teste\HelloMSBuild.proj
+
+
+
+Hora:20141113 09:07:18;Operacao:importarpacote;Sistema:portalnet;Ambiente:teste;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 13/11/2014 09:07:14 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+DeployZip:
+  Descompatando os arquivo(s) do sistema portalnet a partir do diretorio d:\stage\src\producao\portalnet
+  Aguarde...
+D:\ci\scripts\msbuild\MSUnzip.proj(50,4): error : ZipFileName not found: d:\stage\rec\producao\portalnet.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)) -- FALHA.
+
+FALHA da compilação.
+
+"D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino) (1) ->
+(DeployZip destino) -> 
+  D:\ci\scripts\msbuild\MSUnzip.proj(50,4): error : ZipFileName not found: d:\stage\rec\producao\portalnet.zip
+
+    0 Aviso(s)
+    1 Erro(s)
+
+Tempo Decorrido 00:00:03.54
+
+
+
+Hora:20141113 09:15:44;Operacao:importarpacote;Sistema:portalnet;Ambiente:teste;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 13/11/2014 09:15:43 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+D:\ci\scripts\msbuild\MSUnzip.proj(5,50): error MSB4025: Não foi possível carregar o arquivo de projeto. A marca de início 'Ambiente' na linha 5 posição 3 não corresponde à marca de fim de 'Sistema'. Linha 5, posição 50.
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)) -- FALHA.
+
+FALHA da compilação.
+
+"D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino) (1) ->
+  D:\ci\scripts\msbuild\MSUnzip.proj(5,50): error MSB4025: Não foi possível carregar o arquivo de projeto. A marca de início 'Ambiente' na linha 5 posição 3 não corresponde à marca de fim de 'Sistema'. Linha 5, posição 50.
+
+    0 Aviso(s)
+    1 Erro(s)
+
+Tempo Decorrido 00:00:00.47
+
+
+
+Hora:20141113 09:16:40;Operacao:importarpacote;Sistema:portalnet;Ambiente:teste;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 13/11/2014 09:16:39 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+D:\ci\scripts\msbuild\MSUnzip.proj(16,5): error MSB4067: O elemento <When> abaixo do elemento <When> não é reconhecido.
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)) -- FALHA.
+
+FALHA da compilação.
+
+"D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino) (1) ->
+  D:\ci\scripts\msbuild\MSUnzip.proj(16,5): error MSB4067: O elemento <When> abaixo do elemento <When> não é reconhecido.
+
+    0 Aviso(s)
+    1 Erro(s)
+
+Tempo Decorrido 00:00:00.30
+
+
+
+Hora:20141113 09:22:50;Operacao:importarpacote;Sistema:portalnet;Ambiente:teste;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 13/11/2014 09:22:49 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+D:\ci\scripts\msbuild\MSUnzip.proj(16,51): error MSB4025: Não foi possível carregar o arquivo de projeto. Erro durante a análise de EntityName. Linha 16, posição 51.
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)) -- FALHA.
+
+FALHA da compilação.
+
+"D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino) (1) ->
+  D:\ci\scripts\msbuild\MSUnzip.proj(16,51): error MSB4025: Não foi possível carregar o arquivo de projeto. Erro durante a análise de EntityName. Linha 16, posição 51.
+
+    0 Aviso(s)
+    1 Erro(s)
+
+Tempo Decorrido 00:00:00.36
+
+
+
+Hora:20141113 09:25:04;Operacao:importarpacote;Sistema:portalnet;Ambiente:teste;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 13/11/2014 09:25:03 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+DeployZip:
+  Descompatando os arquivo(s) do sistema portalnet a partir do diretorio d:\ci\arquivos\src\teste\portalnet
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\teste\portalnet.zip to: d:\ci\arquivos\src\teste\portalnet
+  Descompactacao concluida...
+  Copiando os arquivos de d:\ci\arquivos\src\teste\portalnet para d:\teste\portalnet ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\teste\portalnet d:\teste\portalnet "*.*" /e /log+:d:\ci\arquivos\processados\portalnet_20141113.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\teste\portalnet d:\teste\portalnet "*.*" /e /log+:d:\ci\arquivos\processados\portalnet_20141113.txt
+  Return Code 3. One or more files were copied successfully (that is, new files have arrived). Some Extra files or directories were detected. Examine the output log. Some housekeeping may be needed.
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\teste\portalnet.zip to: d:\ci\arquivos\processados\portalnet_20141113092504.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:01.43
+
+
+
+Hora:20141113 09:27:36;Operacao:importarpacote;Sistema:portalnet;Ambiente:teste;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 13/11/2014 09:27:35 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\teste\portalnet".
+  rd /s /q "d:\ci\arquivos\src\teste\portalnet"
+DeployZip:
+  Descompatando os arquivo(s) do sistema portalnet a partir do diretorio d:\ci\arquivos\src\teste\portalnet
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\teste\portalnet.zip to: d:\ci\arquivos\src\teste\portalnet
+  Descompactacao concluida...
+  Copiando os arquivos de d:\ci\arquivos\src\teste\portalnet para d:\teste\portalnet ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\teste\portalnet d:\teste\portalnet "*.*" /e /log+:d:\ci\arquivos\processados\portalnet_20141113.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\teste\portalnet d:\teste\portalnet "*.*" /e /log+:d:\ci\arquivos\processados\portalnet_20141113.txt
+  Return Code 3. One or more files were copied successfully (that is, new files have arrived). Some Extra files or directories were detected. Examine the output log. Some housekeeping may be needed.
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\teste\portalnet.zip to: d:\ci\arquivos\processados\portalnet_20141113092736.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:00.97
+
+
+
+Hora:20141113 09:30:43;Operacao:importarpacote;Sistema:portalnet;Ambiente:teste;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 13/11/2014 09:30:42 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\teste\portalnet".
+  rd /s /q "d:\ci\arquivos\src\teste\portalnet"
+DeployZip:
+  Descompatando os arquivo(s) do sistema portalnet a partir do diretorio d:\ci\arquivos\src\teste\portalnet
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\teste\portalnet.zip to: d:\ci\arquivos\src\teste\portalnet
+  Descompactacao concluida...
+  Copiando os arquivos de d:\ci\arquivos\src\teste\portalnet para d:\teste\portalnet ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\teste\portalnet d:\teste\portalnet "*.*" /e /log+:d:\ci\arquivos\processados\portalnet_20141113.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\teste\portalnet d:\teste\portalnet "*.*" /e /log+:d:\ci\arquivos\processados\portalnet_20141113.txt
+  Return Code 3. One or more files were copied successfully (that is, new files have arrived). Some Extra files or directories were detected. Examine the output log. Some housekeeping may be needed.
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\teste\portalnet.zip to: d:\ci\arquivos\processados\portalnet_20141113093042.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:00.94
+
+
+
+Hora:20141113 09:34:21;Operacao:importarpacote;Sistema:portalnet;Ambiente:teste;IPHost:::1
+Microsoft (R) Versão do Mecanismo de Compilação 4.0.30319.18408
+[Microsoft .NET Framework, Versão 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Compilação de 13/11/2014 09:34:20 iniciada.
+Projeto "D:\ci\scripts\msbuild\MSUnzip.proj" no nó 1 (DeployZip;MoveZip destino(s)).
+Clean:
+  Removing directory "d:\ci\arquivos\src\teste\portalnet".
+  rd /s /q "d:\ci\arquivos\src\teste\portalnet"
+DeployZip:
+  Descompatando os arquivo(s) do sistema portalnet a partir do diretorio d:\ci\arquivos\src\teste\portalnet
+  Aguarde...
+  Extracting ZipFile: d:\ci\arquivos\rec\teste\portalnet.zip to: d:\ci\arquivos\src\teste\portalnet
+  Descompactacao concluida...
+  Copiando os arquivos de d:\ci\arquivos\src\teste\portalnet para d:\teste\portalnet ..
+  C:\windows\system32\RoboCopy.exe d:\ci\arquivos\src\teste\portalnet d:\teste\portalnet "*.*" /e /log+:d:\ci\arquivos\processados\portalnet_20141113.txt 
+  Running C:\windows\system32\RoboCopy.exe  d:\ci\arquivos\src\teste\portalnet d:\teste\portalnet "*.*" /e /log+:d:\ci\arquivos\processados\portalnet_20141113.txt
+  Return Code 3. One or more files were copied successfully (that is, new files have arrived). Some Extra files or directories were detected. Examine the output log. Some housekeeping may be needed.
+MoveZip:
+  Movendo o arquivo para pasta Processados
+  Moving File: d:\ci\arquivos\rec\teste\portalnet.zip to: d:\ci\arquivos\processados\portalnet_20141113093421.zip
+Projeto de compilação pronto "D:\ci\scripts\msbuild\MSUnzip.proj" (DeployZip;MoveZip destino(s)).
+
+Compilação com êxito.
+    0 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:00.95
+
+
