@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+
 namespace RegrasScriptSQLTest
 {
     [TestClass]
@@ -9,6 +10,13 @@ namespace RegrasScriptSQLTest
         [TestMethod]
         public void ConteudoTerminadorFimBloco()
         {
+
+            
+        }
+
+        public void FalhaConteudoTerminadorFimBloco()
+        {
+            
         }
     }
 }

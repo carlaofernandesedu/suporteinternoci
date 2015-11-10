@@ -34,6 +34,7 @@ namespace RegrasScriptSQL
                     string ultimainstruc = String.Empty;
                     bool bEncontrouBegin = false;
                     int i = 0;
+                    int linhaend = 0;
                     for (; i < linhas.Length; i++)
                     {
                         linha = linhas[i].ToUpper();
@@ -43,12 +44,28 @@ namespace RegrasScriptSQL
                         }
                         else if (linha.IndexOf("END") > -1 && bEncontrouBegin)
                         {
-                            ultimainstruc = linha;
+                            linhaend = i;
+                            break; 
                         }
                     }
-                    if (!String.IsNullOrEmpty(ultimainstruc))
+                    if (bEncontrouBegin && linhaend > 0)
                     {
-                        if (ultimainstruc.IndexOf(";") == -1 || ultimainstruc.IndexOf("/") == -1)
+                        bool bEncontrouAspas = false;
+                        bool bEncontrouBarra = false; 
+                        for (i = linhaend; i < linhas.Length; i++)
+                        {
+                            linha = linhas[i].ToUpper();
+                            if (linha.IndexOf(";") > -1 || linha.IndexOf("/") > -1)
+                            {
+                                if (linha.IndexOf(";") > -1)
+                                    bEncontrouAspas = true;
+
+                                if (linha.IndexOf("/") > -1)
+                                    bEncontrouBarra = true;
+                            }
+                            
+                        }   
+                        if (!(bEncontrouAspas && bEncontrouBarra))
                         {
                             sbmsg.AppendLine("O Arquivo " + msgfinal + " apresenta clausula BEGIN END mas não apresenta  ; e /  após o END  - linha " + (i + 1).ToString());
                         }
