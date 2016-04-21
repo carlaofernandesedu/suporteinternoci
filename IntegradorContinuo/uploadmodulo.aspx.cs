@@ -167,8 +167,9 @@ namespace WebApplication1
         {
             try
             {
-                StringBuilder sb = new StringBuilder(); 
-                string msglog = string.Format("Hora:{0};Operacao:{1};Sistema:{2};Ambiente:{3};IPHost:{4}", DateTime.Now.ToString("yyyyMMdd hh:mm:ss"), "importarpacote", sistema, ambiente, Request.UserHostAddress);
+                StringBuilder sb = new StringBuilder();
+                DateTime datahora = DateTime.Now; 
+                string msglog = string.Format("Hora:{0};Operacao:{1};Sistema:{2};Ambiente:{3};IPHost:{4}", datahora.ToString("yyyyMMdd hh:mm:ss"), "importarpacote", sistema, ambiente, Request.UserHostAddress);
                 sb.AppendLine(string.Empty);
                 sb.AppendLine(msglog);
                 sb.AppendLine(msgadicional);  
@@ -179,13 +180,25 @@ namespace WebApplication1
                     sw.WriteLine(sb.ToString());   
                     sw.Close(); 
                 }
- 
+                LogarBaseSQL(datahora, "importarpacote", sistema, ambiente, Request.UserHostAddress, caminholog);
             }
             catch
             {
             }
         }
 
+        protected void LogarBaseSQL(DateTime datahora, string operacao, string sistema, string ambiente, string IPHost, string patharquivo)
+        {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
         protected bool HabilitarEnvio(string ambiente,string modulo)
         {
