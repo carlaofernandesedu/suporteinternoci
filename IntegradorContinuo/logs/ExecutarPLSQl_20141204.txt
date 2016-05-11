@@ -1,8 +1,0 @@
-
-Hora:20141204 05:57:29;Operacao:executarplsql;Sistema:contageh;Ambiente:desenvolvimento;IPHost:::1
- Removendo Atributos ReadOnly  
- Atributos Removidos
- Removendo Arquivos *.scc 
- Arquivos *.scc Removidos
-
-

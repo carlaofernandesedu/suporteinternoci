@@ -119,13 +119,16 @@ namespace WebApplication1
                 using (Process p = new Process())
                 {
                     string param1 = Path.Combine(ConfigurationManager.AppSettings["scriptspath"], "MSUnzip.proj"); ;
-                    string param2 = "/t:DeployZip;StopService;BkpApp;CopyToApp;MoveZip;StartService";
+                    string param2 = "/t:DeployZip;StopService;BkpApp;CopyToApp;Copy2ToApp;MoveZip;StartService";
                     string param3 = "/p:sistema=" + sistema;
                     string param4 = "/p:ambiente=" + ambiente;
                     string param5 = "";
-                    if (chkenvio.Checked)
+                    if (sistema != "portalnet")
                     {
-                        param5 = "/p:pacotegmud=1";
+                        if (chkenvio.Checked)
+                        {
+                            param5 = "/p:pacotegmud=1";
+                        }
                     }
                     string command = string.Format("MSBUILD.exe {0} {1} {2} {3} {4}", param1, param2,param3,param4,param5);
                     ProcessStartInfo procStartInfo = new ProcessStartInfo("cmd.exe", "/c " + command);
