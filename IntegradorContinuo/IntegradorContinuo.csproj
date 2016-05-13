@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="listararquivospages.aspx" />
     <Content Include="listararquivosgmud.aspx" />
     <Content Include="listararquivos.aspx" />
     <Content Include="listarlogbuild.aspx" />
@@ -71,6 +72,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="listararquivospages.aspx.cs">
+      <DependentUpon>listararquivospages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listararquivospages.aspx.designer.cs">
+      <DependentUpon>listararquivospages.aspx</DependentUpon>
+    </Compile>
     <Compile Include="listararquivosgmud.aspx.cs">
       <DependentUpon>listararquivosgmud.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="listararquivos.aspx.cs" Inherits="WebApplication1.listararquivos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="listararquivospages.aspx.cs" Inherits="WebApplication1.listararquivospages" %>
 
 <!DOCTYPE html>
 
@@ -18,7 +18,7 @@
 					<table border="0" cellpadding="20" cellspacing="0" width="100%">
 					<tbody><tr>
 						<td valign="bottom">
-						<p>DESENVOLVIMENTO SSE - LISTAR PRINICIPAIS ARQUIVOS DOS MÓDULOS (SERVIDOR DE DESENVOLVIMENTO)</p>
+						<p>DESENVOLVIMENTO SSE - LISTAR ARQUIVOS DOS MÓDULOS PARA O PORTALNET A PARTIR DA SUBPASTA PAGINAS (SERVIDOR DE DESENVOLVIMENTO)</p>
 						</td>
 						<td align="right" valign="bottom">
 							<img src="img/login_logo.gif" width="136" height="31" alt="BMC logo" border="0"> 
@@ -39,30 +39,25 @@
                  </tr>
              <tr><td>Sistema:&nbsp;&nbsp; <asp:DropDownList ID="ddlsistema" runat="server"  ></asp:DropDownList></td>
                  </tr>
+             <tr><td>Informe o nome do Modulo:&nbsp;&nbsp; <asp:Textbox ID="txtcaminhosubpasta" runat="server" Width="701px"  >.Pages</asp:Textbox></td>
+                 </tr>
              <tr><td align="center">
                      <asp:Button ID="btndeploy" runat="server" Text="Listar Arquivos" OnClick="btndeploy_Click" /> </td>
                  </tr>
              <tr><td align="center">
-                 <asp:Label id="lblNoRows" runat="server" visible="false" ForeColor="#CC0000" Font-Bold="True">Não há parametrizacao para esse sistema</asp:Label>
+                 <asp:Label id="lblNoRows" runat="server" visible="false" ForeColor="#CC0000" Font-Bold="True">Nao foi possivel encontrar o caminho solicitado</asp:Label>
                 <br />
-        <asp:DataGrid runat="server" id="articleList" Font-Name="Verdana"
-    AutoGenerateColumns="False" AlternatingItemStyle-BackColor="#eeeeee"
-    HeaderStyle-BackColor="Navy" HeaderStyle-ForeColor="White"
-    HeaderStyle-Font-Size="10pt" HeaderStyle-Font-Bold="True"
-              OnSortCommand="articleList_SortCommand"
-           AllowSorting="true"
-            >
-  <Columns>
-    <asp:BoundColumn DataField="Name"  
-           HeaderText="Nome" SortExpression="Name"  />
-    <asp:BoundColumn DataField="LastWriteTime" HeaderText="Data Ultima Modificação"
-        ItemStyle-HorizontalAlign="Center" DataFormatString="{0:g}" SortExpression="LastWriteTime" />
-    <asp:BoundColumn DataField="Length" HeaderText="Tamanho"
-		ItemStyle-HorizontalAlign="Right" 
-		DataFormatString="{0:#,### bytes}" />
-  </Columns>
-</asp:DataGrid>
-                     </td>
+                 <div id="dvtree" runat="server">
+                 <asp:TreeView ID="TreeView1" runat="server" ImageSet="XPFileExplorer" NodeIndent="15">
+    <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+    <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="Black" HorizontalPadding="2px"
+        NodeSpacing="0px" VerticalPadding="2px"></NodeStyle>
+    <ParentNodeStyle Font-Bold="False" />
+    <SelectedNodeStyle BackColor="#B5B5B5" Font-Underline="False" HorizontalPadding="0px"
+        VerticalPadding="0px" />
+</asp:TreeView>
+                     </div>
+                 </td>
              </tr>
              </table>  
     </div>

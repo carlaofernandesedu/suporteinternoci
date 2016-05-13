@@ -2,7 +2,18 @@
 <DataSet>
   <teste modulo="portalnet" enviapacote="0" pathapp="D:\Teste\PortalNet\BIN" />
   <homologacao modulo="portalnet" enviapacote="0" pathapp="D:\Homologacao\PortalNet\BIN" />
+  <producao modulo="changepoint" enviapacote="1" pathapp="" />
+  <producao modulo="contagem" enviapacote="1" pathapp="D:\producao\servicosweb\contagem" />
+  <producao modulo="estatico" enviapacote="1" pathapp="D:\Portal\ARQSGDAE\estatico" />
+  <producao modulo="gratificacaogge.ws" enviapacote="1" pathapp="D:\servicos\win\gratificacaogge.ws" />
+  <producao modulo="jsp" enviapacote="1" pathapp="D:\Portal\ARQSGDAE\estatico" />
   <producao modulo="questionario" enviapacote="1" pathapp="" />
+  <producao modulo="lp" enviapacote="1" pathapp="D:\servicos\win\lp" />
+  <producao modulo="monitoramento" enviapacote="0" pathapp="D:\Portal\Monitoramento\BIN" />
   <producao modulo="municipalizacao" enviapacote="1" pathapp="" />
+  <producao modulo="portalnet" enviapacote="0" pathapp="D:\Producao\PortalNet\BIN" />
   <producao modulo="roe" enviapacote="1" pathapp="D:\servicos\win\roe" />
+  <producao modulo="servicoazure" enviapacote="1" pathapp="D:\servicos\win\servicoazure" />
+  <producao modulo="usuario" enviapacote="1" pathapp="D:\producao\servicosweb\usuario" />
+  <producao modulo="winservicepnae" enviapacote="1" pathapp="D:\servicos\win\winservicepnae" />
 </DataSet>

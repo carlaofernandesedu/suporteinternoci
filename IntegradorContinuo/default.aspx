@@ -31,8 +31,9 @@
 		<hr color="black">
     <ul>
         <li><a href="uploadmodulo.aspx">Upload de Módulos para Servidor de Desenvolvimento</a></li>
-        <li><a href="listararquivos.aspx">Lista os principais arquivos por Sistema</a></li>
-        <li><a href="listararquivosgmud.aspx">Lista os arquivos encaminhados para GMUD</a></li>
+        <li><a href="listararquivos.aspx">Inspecionar após deploy - Lista os principais arquivos por Sistema /Ambiente</a></li>
+        <li><a href="listararquivospages.aspx">Inspecionar após deploy - Lista arquivos dos módulos do PortalNET - subpasta paginas</a></li>
+        <li><a href="listararquivosgmud.aspx">Lista os arquivos(.zip) encaminhados para GMUD</a></li>
         <li><a href="listarlogbuild.aspx">Lista os arquivos de Log para GMUD PortalNET</a></li>
 		
     </ul>
